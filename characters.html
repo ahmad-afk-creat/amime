@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Theme Website</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+    
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+    
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+    
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+    
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0 0;
+        }
+    
+        header {
+            background-color: transparent; /* Mengubah background navbar menjadi transparan */
+            padding: 20px;
+            text-align: center;
+        }
+    
+        header h1 {
+            margin: 0;
+            color: white;
+            font-size: 2.5rem;
+        }
+    
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+    
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    </style>
+    
+</head>
+<header>
+    <h1>Anime Characters</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="ch.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to the Anime World</h1>
+        <p>Explore your favorite anime characters and stories.</p>
+    </div>
+</body>
+</html>
